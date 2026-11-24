@@ -1,0 +1,14 @@
+# Legal operations checklist
+
+Counsel resolves legal questions. The operator owns the record, routes exceptions and verifies that signed decisions reach the people who act on them.
+
+| Component | Initial check | Trigger and next control |
+|---|---|---|
+| Entity and board records | Keep formation documents, amendments, board minutes and written approvals indexed by entity and date. [Cooley](https://www.cooleygo.com/documents/sample-vc-due-diligence-request-list/) | At another entity or institutional financing, reconcile the minute book against actual equity and financing events. Ask counsel about missing actions. |
+| Equity plan and option pricing | Record the approved plan, available pool, individual awards and applicable valuation. A 409A valuation estimates common stock value for option pricing. [Gunderson](https://catalyze.gunder.com/en/knowledge-articles/resource/example-pre-seed-due-diligence-checklist) | Before a new grant or material financing event, ask counsel whether the prior valuation still supports the strike price. Record the decision and effective date. |
+| Contracts and signature authority | Name permitted signers, thresholds, approved forms and exception owners. Store the executed version and its renewal or notice terms. [Cooley](https://www.cooleygo.com/documents/sample-vc-due-diligence-request-list/) | When nonstandard discounts, liability or data terms recur, assign review routes by exception. Confirm signed obligations reach Billing, Security and the service owner. |
+| Intellectual property | Match creators to signed invention assignments and licenses. Check founders, employees and contractors. [Gunderson](https://catalyze.gunder.com/en/knowledge-articles/resource/example-pre-seed-due-diligence-checklist) | At an acquisition, new jurisdiction or third-party contribution, ask counsel about ownership gaps and permissions. Track remediation before asserting exclusive ownership. |
+| Privacy and security evidence | List customer data, commitments, evidence owners and review dates. Ask the buyer which exact report, certification or control evidence it accepts. [Diligence checklist](https://www.cooleygo.com/documents/sample-vc-due-diligence-request-list/) | When a contract requires independent assurance, agree scope and timing with the auditor. Distinguish a SOC 2 examination from an ISO certification. |
+| Outside counsel | Agree scope, rates, decision authority and which tasks need specialist advice. Track actual invoices against the engagement. [Sample fee structures](https://clemenzalaw.com/general-counsel) | When recurring work costs more than the comparable retainer, price both against the same matter mix. Identify excluded disputes and deals before switching. |
+
+Ask counsel for the record and owner that prove each issue closed. [Tool and provider comparison](../references/tool-prices.md)

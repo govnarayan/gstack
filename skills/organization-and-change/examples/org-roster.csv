@@ -1,0 +1,58 @@
+id,title,manager_id,team,role_type,declared_archetype
+M01,SVP Product and Platform,,Leadership,manager,facilitator
+M02,VP Engineering,M01,Engineering,manager,coach
+M03,Director Platform Engineering,M02,Platform,manager,coach
+I001,Platform engineer,M03,Platform,ic,
+I002,Platform engineer,M03,Platform,ic,
+I003,Platform engineer,M03,Platform,ic,
+I004,Platform engineer,M03,Platform,ic,
+I005,Platform engineer,M03,Platform,ic,
+I006,Platform engineer,M03,Platform,ic,
+M04,Director Product Engineering,M02,Product Eng,manager,coach
+M05,"Eng manager, Self-serve",M04,Self-serve Eng,manager,supervisor
+I007,"Engineer, self-serve",M05,Self-serve Eng,ic,
+I008,"Engineer, self-serve",M05,Self-serve Eng,ic,
+I009,"Engineer, self-serve",M05,Self-serve Eng,ic,
+I010,"Engineer, self-serve",M05,Self-serve Eng,ic,
+I011,"Engineer, self-serve",M05,Self-serve Eng,ic,
+I012,"Engineer, self-serve",M05,Self-serve Eng,ic,
+I013,"Engineer, self-serve",M05,Self-serve Eng,ic,
+I014,"Engineer, self-serve",M05,Self-serve Eng,ic,
+I015,"Engineer, self-serve",M05,Self-serve Eng,ic,
+M06,"Eng manager, Enterprise",M04,Enterprise Eng,manager,supervisor
+I016,"Engineer, enterprise",M06,Enterprise Eng,ic,
+I017,"Engineer, enterprise",M06,Enterprise Eng,ic,
+I018,"Engineer, enterprise",M06,Enterprise Eng,ic,
+I019,"Engineer, enterprise",M06,Enterprise Eng,ic,
+I020,"Engineer, enterprise",M06,Enterprise Eng,ic,
+M07,"Eng manager, Integrations",M04,Integrations,manager,supervisor
+I021,"Engineer, integrations",M07,Integrations,ic,
+I022,"Engineer, integrations",M07,Integrations,ic,
+M08,Director Security,M01,Security,manager,player_coach
+M09,Security review lead,M08,Security,manager,player_coach
+I023,Security reviewer,M09,Security,ic,
+I024,Security reviewer,M09,Security,ic,
+I025,Security reviewer,M09,Security,ic,
+I026,Security engineer,M08,Security,ic,
+M10,Head of Data,M01,Data,manager,coach
+M11,Data platform manager,M10,Data,manager,coach
+I027,Data engineer,M11,Data,ic,
+I028,Data engineer,M11,Data,ic,
+I029,Data engineer,M11,Data,ic,
+I030,Data engineer,M11,Data,ic,
+M12,Analytics manager,M10,Data,manager,supervisor
+I031,Analyst,M12,Data,ic,
+I032,Analyst,M12,Data,ic,
+I033,Analyst,M12,Data,ic,
+I034,Analyst,M12,Data,ic,
+I035,Analyst,M12,Data,ic,
+I036,Analyst,M12,Data,ic,
+I037,Analyst,M12,Data,ic,
+I038,Analyst,M12,Data,ic,
+I039,Analyst,M12,Data,ic,
+I040,Analyst,M12,Data,ic,
+I041,Analyst,M12,Data,ic,
+I042,Analyst,M12,Data,ic,
+M13,Director Solutions Engineering,M01,Solutions,manager,coach
+M14,Solutions manager,M13,Solutions,manager,supervisor
+I043,Solutions engineer,M14,Solutions,ic,

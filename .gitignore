@@ -1,0 +1,33 @@
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node
+node_modules/
+
+# Secrets
+.env
+.env.local
+*.pem
+*.key
+
+# State / cache from skills that write state
+state/
+*.log
+.claude/logs/
+
+# Local scratch
+scratch/
+tmp/

@@ -1,0 +1,8 @@
+{
+  "operator": "Synthetic test operator, explicitly selected configuration",
+  "budget": 120000,
+  "currency": "USD",
+  "fte_capacity": 3,
+  "capacity_period": "One shared 90-day period; treat allocations as concurrent for a conservative ceiling",
+  "planning_system": "V2MOM, with an OKR draft crosswalk requested for this demonstration"
+}

@@ -1,0 +1,535 @@
+{
+  "synthetic": true,
+  "program": "Usage-based pricing launch",
+  "status_week": 9,
+  "committed_finish_week": 20,
+  "sponsor": "COO",
+  "program_lead": "BizOps lead",
+  "change_threshold": {
+    "schedule_weeks": 1,
+    "cost_usd": 25000,
+    "approver": "COO"
+  },
+  "authority": {
+    "D-01": {
+      "question": "Usage price metric and list price",
+      "decide": "CEO",
+      "agree": [
+        "CFO"
+      ],
+      "recommend": "VP Product",
+      "input": [
+        "CRO",
+        "VP Customer Success",
+        "Head of Data"
+      ],
+      "perform": [
+        "Billing engineering",
+        "Sales enablement"
+      ]
+    },
+    "D-02": {
+      "question": "Grandfathering terms for existing annual contracts",
+      "decide": "CRO",
+      "agree": [
+        "General Counsel"
+      ],
+      "recommend": "VP Customer Success",
+      "input": [
+        "CFO",
+        "VP Product"
+      ],
+      "perform": [
+        "Account management"
+      ]
+    },
+    "D-03": {
+      "question": "Sales compensation treatment of usage revenue",
+      "decide": "CFO",
+      "agree": [
+        "CRO"
+      ],
+      "recommend": "Head of Sales Ops",
+      "input": [
+        "People lead"
+      ],
+      "perform": [
+        "Sales Ops"
+      ]
+    },
+    "D-04": {
+      "question": "Launch date and rollout scope",
+      "decide": "COO",
+      "agree": [],
+      "recommend": "BizOps lead",
+      "input": [
+        "VP Engineering",
+        "VP Customer Success",
+        "CRO"
+      ],
+      "perform": [
+        "All workstreams"
+      ]
+    }
+  },
+  "tasks": [
+    {
+      "id": "P1",
+      "name": "Pricing analysis and recommendation",
+      "workstream": "Pricing",
+      "duration": 4,
+      "after": [],
+      "owner": "pricing_analyst",
+      "load": 0.8,
+      "accountable": "VP Product",
+      "status": "done"
+    },
+    {
+      "id": "P2",
+      "name": "Pricing decision (D-01)",
+      "workstream": "Pricing",
+      "duration": 1,
+      "after": [
+        "P1"
+      ],
+      "owner": "pricing_analyst",
+      "load": 0.3,
+      "accountable": "CEO",
+      "status": "done"
+    },
+    {
+      "id": "B1",
+      "name": "Metering pipeline",
+      "workstream": "Billing",
+      "duration": 6,
+      "after": [],
+      "owner": "billing_lead",
+      "load": 0.6,
+      "accountable": "VP Engineering",
+      "status": "done"
+    },
+    {
+      "id": "B2",
+      "name": "Rating and invoice engine changes",
+      "workstream": "Billing",
+      "duration": 6,
+      "after": [
+        "B1",
+        "P2"
+      ],
+      "owner": "billing_lead",
+      "load": 0.7,
+      "accountable": "VP Engineering",
+      "status": "in_progress",
+      "forecast_extra_weeks": 3,
+      "remaining_weeks": 6
+    },
+    {
+      "id": "B3",
+      "name": "Billing migration of existing accounts",
+      "workstream": "Billing",
+      "duration": 4,
+      "after": [
+        "B2"
+      ],
+      "owner": "billing_lead",
+      "load": 0.8,
+      "accountable": "VP Engineering",
+      "status": "not_started"
+    },
+    {
+      "id": "F1",
+      "name": "Revenue recognition policy for usage",
+      "workstream": "Finance",
+      "duration": 3,
+      "after": [
+        "P2"
+      ],
+      "owner": "controller",
+      "load": 0.4,
+      "accountable": "CFO",
+      "status": "in_progress",
+      "remaining_weeks": 2
+    },
+    {
+      "id": "S1",
+      "name": "Comp plan change (D-03)",
+      "workstream": "Sales",
+      "duration": 3,
+      "after": [
+        "P2"
+      ],
+      "owner": "sales_ops",
+      "load": 0.5,
+      "accountable": "CFO",
+      "status": "in_progress",
+      "remaining_weeks": 1
+    },
+    {
+      "id": "S2",
+      "name": "Sales enablement and quoting",
+      "workstream": "Sales",
+      "duration": 3,
+      "after": [
+        "S1",
+        "B2"
+      ],
+      "owner": "sales_ops",
+      "load": 0.6,
+      "accountable": "CRO",
+      "status": "not_started"
+    },
+    {
+      "id": "C1",
+      "name": "Grandfathering decision (D-02)",
+      "workstream": "Customer",
+      "duration": 2,
+      "after": [
+        "P2"
+      ],
+      "owner": "cs_ops",
+      "load": 0.4,
+      "accountable": "CRO",
+      "status": "in_progress",
+      "remaining_weeks": 1
+    },
+    {
+      "id": "C2",
+      "name": "Customer notices (60 days before change)",
+      "workstream": "Customer",
+      "duration": 9,
+      "after": [
+        "C1"
+      ],
+      "owner": "cs_ops",
+      "load": 0.3,
+      "accountable": "VP Customer Success",
+      "status": "not_started"
+    },
+    {
+      "id": "R1",
+      "name": "Support readiness and runbooks",
+      "workstream": "Support",
+      "duration": 3,
+      "after": [
+        "B2"
+      ],
+      "owner": "support_lead",
+      "load": 0.5,
+      "accountable": "VP Customer Success",
+      "status": "not_started"
+    },
+    {
+      "id": "L1",
+      "name": "Launch go/no-go and staged rollout",
+      "workstream": "Launch",
+      "duration": 2,
+      "after": [
+        "B3",
+        "S2",
+        "C2",
+        "R1",
+        "F1"
+      ],
+      "owner": "bizops_lead",
+      "load": 0.5,
+      "accountable": "COO",
+      "status": "not_started"
+    }
+  ],
+  "people": {
+    "billing_lead": {
+      "capacity": 1.0,
+      "other_commitments": [
+        {
+          "from_week": 9,
+          "to_week": 12,
+          "load": 0.5,
+          "what": "Billing system consolidation (separate program)"
+        }
+      ]
+    },
+    "pricing_analyst": {
+      "capacity": 1.0,
+      "other_commitments": []
+    },
+    "controller": {
+      "capacity": 1.0,
+      "other_commitments": [
+        {
+          "from_week": 10,
+          "to_week": 11,
+          "load": 0.6,
+          "what": "Quarter close"
+        }
+      ]
+    },
+    "sales_ops": {
+      "capacity": 1.0,
+      "other_commitments": [
+        {
+          "from_week": 0,
+          "to_week": 30,
+          "load": 0.3,
+          "what": "Ongoing sales operations"
+        }
+      ]
+    },
+    "cs_ops": {
+      "capacity": 1.0,
+      "other_commitments": [
+        {
+          "from_week": 0,
+          "to_week": 30,
+          "load": 0.4,
+          "what": "Renewals operations"
+        }
+      ]
+    },
+    "support_lead": {
+      "capacity": 1.0,
+      "other_commitments": [
+        {
+          "from_week": 0,
+          "to_week": 30,
+          "load": 0.5,
+          "what": "Support queue management"
+        }
+      ]
+    },
+    "bizops_lead": {
+      "capacity": 1.0,
+      "other_commitments": [
+        {
+          "from_week": 0,
+          "to_week": 30,
+          "load": 0.5,
+          "what": "Operating cadence and planning"
+        }
+      ]
+    }
+  },
+  "raid": [
+    {
+      "id": "R-01",
+      "type": "risk",
+      "title": "Rating engine changes take longer than six weeks",
+      "owner": "VP Engineering",
+      "severity": "high",
+      "status": "realized",
+      "due_week": 9,
+      "updated_week": 9,
+      "response": "Became issue I-01"
+    },
+    {
+      "id": "I-01",
+      "type": "issue",
+      "title": "Rating engine forecast +3 weeks; on the critical path",
+      "owner": "VP Engineering",
+      "severity": "high",
+      "status": "open",
+      "due_week": 10,
+      "updated_week": 9,
+      "response": "Options prepared for D-04 change request CR-02",
+      "decision": "D-04"
+    },
+    {
+      "id": "R-02",
+      "type": "risk",
+      "title": "Annual-contract customers object to usage terms",
+      "owner": "VP Customer Success",
+      "severity": "high",
+      "status": "open",
+      "due_week": 11,
+      "updated_week": 9,
+      "response": "D-02 grandfathering options; legal review of notice language"
+    },
+    {
+      "id": "R-03",
+      "type": "risk",
+      "title": "Sales reps sandbag deals until comp plan is final",
+      "owner": "Head of Sales Ops",
+      "severity": "medium",
+      "status": "open",
+      "due_week": 8,
+      "updated_week": 5,
+      "response": "Interim comp guidance"
+    },
+    {
+      "id": "A-01",
+      "type": "assumption",
+      "title": "Existing invoices can be re-rated without customer action",
+      "owner": "",
+      "severity": "medium",
+      "status": "open",
+      "due_week": 12,
+      "updated_week": 6,
+      "response": ""
+    },
+    {
+      "id": "D-dep-01",
+      "type": "dependency",
+      "title": "Billing consolidation program releases billing lead after week 12",
+      "owner": "Billing consolidation lead",
+      "severity": "high",
+      "status": "open",
+      "due_week": 12,
+      "updated_week": 9,
+      "response": "Negotiated split; see capacity"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "D-01",
+      "status": "decided",
+      "decided_by": "CEO",
+      "week": 5,
+      "summary": "Per-active-seat-hour metric with platform minimum; list price per pricing memo v3",
+      "agreed_by": [
+        "CFO"
+      ],
+      "dissent": "CRO preferred flat tiers for SMB; recorded, input considered"
+    },
+    {
+      "id": "D-03",
+      "status": "decided",
+      "decided_by": "CRO",
+      "week": 8,
+      "summary": "Usage revenue credited at 100% of first-year contract value",
+      "agreed_by": [],
+      "dissent": ""
+    },
+    {
+      "id": "D-02",
+      "status": "proposed",
+      "decided_by": "",
+      "week": 9,
+      "summary": "Grandfather annual contracts to renewal; opt-in migration credit",
+      "agreed_by": [],
+      "dissent": ""
+    },
+    {
+      "id": "D-04",
+      "status": "proposed",
+      "decided_by": "",
+      "week": 9,
+      "summary": "Options for +2 week rating slip",
+      "agreed_by": [],
+      "dissent": ""
+    }
+  ],
+  "changes": [
+    {
+      "id": "CR-01",
+      "title": "Add self-serve usage dashboard to launch scope",
+      "schedule_weeks": 0,
+      "cost_usd": 40000,
+      "approved_by": "VP Product",
+      "status": "approved"
+    },
+    {
+      "id": "CR-02",
+      "title": "Respond to the +3 week rating slip (decision D-04)",
+      "schedule_weeks": 1,
+      "cost_usd": 0,
+      "approved_by": "",
+      "status": "pending"
+    }
+  ],
+  "benefits": [
+    {
+      "id": "BEN-01",
+      "measure": "Net revenue retention, accounts on usage pricing",
+      "baseline": 1.04,
+      "baseline_source": "FY25 cohort, finance model v2",
+      "target": 1.1,
+      "owner": "CFO",
+      "measure_week": 46
+    },
+    {
+      "id": "BEN-02",
+      "measure": "Expansion revenue from usage overage, per quarter",
+      "baseline": null,
+      "baseline_source": "",
+      "target": 600000,
+      "owner": "CRO",
+      "measure_week": 33
+    },
+    {
+      "id": "BEN-03",
+      "measure": "Discount exceptions requested per quarter",
+      "baseline": 140,
+      "baseline_source": "Deal desk log Q2",
+      "target": 90,
+      "owner": "",
+      "measure_week": 33
+    }
+  ],
+  "milestones": [
+    {
+      "id": "M1",
+      "name": "Pricing approved",
+      "task": "P2",
+      "acceptance": "D-01 recorded with D and A sign-off",
+      "acceptor": "CEO"
+    },
+    {
+      "id": "M2",
+      "name": "Billing ready for migration",
+      "task": "B2",
+      "acceptance": "Test invoices for 50 sampled accounts match finance model within 0.5%",
+      "acceptor": "Controller"
+    },
+    {
+      "id": "M3",
+      "name": "Customers notified",
+      "task": "C2",
+      "acceptance": "Notices delivered 60 days before effective date; legal-approved language",
+      "acceptor": ""
+    },
+    {
+      "id": "M4",
+      "name": "Launch",
+      "task": "L1",
+      "acceptance": "Go/no-go checklist passed; support staffed for forecast contacts",
+      "acceptor": "COO"
+    }
+  ],
+  "options_for_open_decisions": {
+    "D-04": [
+      {
+        "option": "Launch new customers in week 20; move existing accounts after their notices and migration",
+        "remove_dependency": [
+          [
+            "L1",
+            "B3"
+          ],
+          [
+            "L1",
+            "C2"
+          ]
+        ],
+        "extra_weeks": {},
+        "cost_usd": 0,
+        "gives_up": "Existing-account usage revenue until migration and the 60-day notice period complete; two billing paths for support in the gap"
+      },
+      {
+        "option": "Move the whole launch one week, to week 21",
+        "remove_dependency": [],
+        "extra_weeks": {},
+        "cost_usd": 0,
+        "gives_up": "One week of usage revenue for every account; sales has been guiding customers to week 20"
+      },
+      {
+        "option": "Add a contract billing engineer for weeks 10-15 to recover two weeks",
+        "remove_dependency": [],
+        "extra_weeks": {
+          "B2": -2,
+          "B3": 1
+        },
+        "cost_usd": 60000,
+        "gives_up": "$60,000 above the change threshold; ramp and onboarding load land on the already overloaded billing lead (assumed +1 week on migration)"
+      }
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "horizon_months": 12,
+  "currency": "USD",
+  "initiatives": [
+    {
+      "name": "New paid conversion",
+      "kind": "acquisition",
+      "eligible_population": 1000000,
+      "incremental_paid_conversion": 0.005,
+      "monthly_survival": 0.97,
+      "contribution_per_paid_month": 5,
+      "one_time_cost": 120000,
+      "recurring_monthly_cost": 0
+    },
+    {
+      "name": "Existing member retention",
+      "kind": "retention",
+      "eligible_population": 100000,
+      "baseline_monthly_survival": 0.97,
+      "treatment_monthly_survival": 0.975,
+      "contribution_per_paid_month": 5,
+      "one_time_cost": 100000,
+      "recurring_monthly_cost": 0
+    },
+    {
+      "name": "Premium AI upgrade",
+      "kind": "upgrade",
+      "upgrading_members": 10000,
+      "monthly_survival": 0.97,
+      "incremental_contribution_per_paid_month": 2,
+      "one_time_cost": 250000,
+      "recurring_monthly_cost": 0
+    }
+  ]
+}

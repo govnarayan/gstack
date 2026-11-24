@@ -1,0 +1,155 @@
+{
+  "tasks": [
+    {
+      "id": "T1",
+      "name": "Pricing dashboard",
+      "status": "shipped",
+      "updated_on": "2026-11-11",
+      "dri": "Data lead"
+    },
+    {
+      "id": "T2",
+      "name": "Sales briefing",
+      "status": "slipped",
+      "updated_on": "2026-11-13",
+      "accountable": "Sales Ops lead",
+      "reason": "Waiting on approved pricing copy"
+    },
+    {
+      "id": "T3",
+      "name": "Migration approval",
+      "status": "blocked",
+      "updated_on": "2026-11-12",
+      "blocked_since": "2026-11-02",
+      "waiting_on": "Security"
+    },
+    {
+      "id": "T4",
+      "name": "Billing review",
+      "status": "open",
+      "updated_on": "2026-11-06",
+      "dri": "Billing lead"
+    },
+    {
+      "id": "T5",
+      "name": "Prior release",
+      "status": "done",
+      "updated_on": "2026-11-06",
+      "dri": "Product lead"
+    }
+  ],
+  "metrics": [
+    {
+      "id": "M1",
+      "name": "Trial starts",
+      "history": [
+        96,
+        102,
+        100,
+        102
+      ],
+      "current": 80,
+      "tolerance": 10,
+      "owner": "Growth lead",
+      "guess": "One acquisition campaign paused"
+    },
+    {
+      "id": "M2",
+      "name": "Paid accounts",
+      "history": [
+        48,
+        50,
+        50,
+        52
+      ],
+      "current": 55,
+      "tolerance": 5,
+      "owner": "Finance lead"
+    }
+  ],
+  "handoffs": [
+    {
+      "id": "H1",
+      "name": "Enablement material",
+      "handed_on": "2026-11-06",
+      "last_moved_on": "2026-11-06",
+      "sender": "Product",
+      "receiver": "Sales Ops",
+      "status": "open"
+    },
+    {
+      "id": "H2",
+      "name": "Invoice tests",
+      "handed_on": "2026-11-08",
+      "last_moved_on": "2026-11-08",
+      "sender": "Billing",
+      "receiver": "Support",
+      "status": "open"
+    },
+    {
+      "id": "H3",
+      "name": "Historical handoff",
+      "handed_on": "2026-10-13",
+      "last_moved_on": "2026-10-13",
+      "sender": "Finance",
+      "receiver": "Sales",
+      "status": "open"
+    },
+    {
+      "id": "H4",
+      "name": "Completed handoff",
+      "handed_on": "2026-11-02",
+      "last_moved_on": "2026-11-03",
+      "sender": "Finance",
+      "receiver": "Sales",
+      "status": "done"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "D1",
+      "status": "open",
+      "latest_safe_on": "2026-11-18"
+    },
+    {
+      "id": "D2",
+      "status": "decided",
+      "latest_safe_on": "2026-11-17",
+      "decided_by": "VP Product",
+      "entered_by": "Coordinator"
+    },
+    {
+      "id": "D3",
+      "status": "decided",
+      "latest_safe_on": "2026-11-16",
+      "decided_by": "CFO",
+      "entered_by": "Coordinator",
+      "question": "Book trial credits",
+      "dri": "CFO"
+    },
+    {
+      "id": "D4",
+      "status": "open",
+      "latest_safe_on": "2026-11-20",
+      "question": "Update sales playbook",
+      "dri": "Sales Ops lead"
+    }
+  ],
+  "authority": {
+    "D1": {
+      "question": "Approve billing rollout",
+      "decide": "COO",
+      "agree": [
+        "Legal lead"
+      ]
+    },
+    "D2": {
+      "question": "Approve grandfathering",
+      "decide": "CRO",
+      "agree": [],
+      "input": [
+        "VP Product"
+      ]
+    }
+  }
+}

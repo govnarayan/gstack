@@ -1,0 +1,18 @@
+kind,id,name,status,updated_on,dri,accountable,reason,blocked_since,waiting_on,history,current,tolerance,owner,guess,handed_on,last_moved_on,sender,receiver,latest_safe_on,decided_by,entered_by,question,decide,agree,input
+task,T1,Pricing dashboard,shipped,2026-11-11,Data lead,,,,,,,,,,,,,,,,,,,,
+task,T2,Sales briefing,slipped,2026-11-13,,Sales Ops lead,Waiting on approved pricing copy,,,,,,,,,,,,,,,,,,
+task,T3,Migration approval,blocked,2026-11-12,,,,2026-11-02,Security,,,,,,,,,,,,,,,,
+task,T4,Billing review,open,2026-11-06,Billing lead,,,,,,,,,,,,,,,,,,,,
+task,T5,Prior release,done,2026-11-06,Product lead,,,,,,,,,,,,,,,,,,,,
+metric,M1,Trial starts,,,,,,,,96|102|100|102,80,10,Growth lead,One acquisition campaign paused,,,,,,,,,,,
+metric,M2,Paid accounts,,,,,,,,48|50|50|52,55,5,Finance lead,,,,,,,,,,,,
+handoff,H1,Enablement material,open,,,,,,,,,,,,2026-11-06,2026-11-06,Product,Sales Ops,,,,,,,
+handoff,H2,Invoice tests,open,,,,,,,,,,,,2026-11-08,2026-11-08,Billing,Support,,,,,,,
+handoff,H3,Historical handoff,open,,,,,,,,,,,,2026-10-13,2026-10-13,Finance,Sales,,,,,,,
+handoff,H4,Completed handoff,done,,,,,,,,,,,,2026-11-02,2026-11-03,Finance,Sales,,,,,,,
+decision,D1,,open,,,,,,,,,,,,,,,,2026-11-18,,,,,,
+decision,D2,,decided,,,,,,,,,,,,,,,,2026-11-17,VP Product,Coordinator,,,,
+decision,D3,,decided,,CFO,,,,,,,,,,,,,,2026-11-16,CFO,Coordinator,Book trial credits,,,
+decision,D4,,open,,Sales Ops lead,,,,,,,,,,,,,,2026-11-20,,,Update sales playbook,,,
+authority,D1,,,,,,,,,,,,,,,,,,,,,Approve billing rollout,COO,Legal lead,
+authority,D2,,,,,,,,,,,,,,,,,,,,,Approve grandfathering,CRO,,VP Product

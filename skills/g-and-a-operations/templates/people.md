@@ -1,0 +1,14 @@
+# People operations checklist
+
+Start with a dated roster by actual work location. Check the first transaction after every provider or location change. [Remote founder account](https://stripe.com/guides/atlas/starting-a-remote-company)
+
+| Component | Initial check | Trigger and next control |
+|---|---|---|
+| Payroll and benefits | Compare payroll plus a broker with a professional employer organization covering the same employees, plans and contribution amounts. [Justworks](https://www.justworks.com/pricing) | Reprice when locations, renewal premiums or service needs change. Ask for premiums, fees, deductibles, networks and exit costs in writing. |
+| International hiring | Give counsel the location, duration, working relationship, control and customer commitments. Compare contractor, local employer of record and owned entity only where eligible. [Remote](https://remote.com/pricing) | Cost the entity on comparable benefits, payroll, filings, management and exit. Reopen before local hiring or contracting activity exceeds advised scope. |
+| Retirement plan | Choose a plan and responsible fiduciaries. Document eligibility, contribution rules, notices, recordkeeping and provider oversight. [Department of Labor](https://www.dol.gov/agencies/ebsa/about-ebsa/our-activities/resource-center/publications/401k-plans-for-small-businesses) | When moving payroll providers, trace a deduction into a participant account. Verify remittance, exceptions and the person responsible for corrections. |
+| HR system | Give each employee one canonical roster entry with manager, role, location and effective dates. Control access to pay and sensitive records. [IRS](https://www.irs.gov/businesses/small-businesses-self-employed/checklist-for-starting-a-business) | When duplicate entry causes payroll or access errors, choose one record owner. Check a hire, transfer and departure across payroll, benefits and identity systems. |
+| Handbook | Record the authorized policy version, local addenda, owner and employee acknowledgment. Ask counsel which policies vary by location. [Handbook provider](https://blissbook.com/pricing) | Review before entering a new state or revising leave and benefits. Preserve the earlier version and track outstanding acknowledgments. |
+| State registrations | Before someone starts or moves, identify employment and business registrations with counsel and the payroll provider. Keep the account numbers and confirmation receipts securely. [SBA](https://legacy.sba.gov/business-guide/launch-your-business/register-your-business) | When a new location appears on the roster, compare employer records, payroll setup and notices. A registration service fee covers only its specified filings. |
+
+[Compare provider prices and limits](../references/tool-prices.md) using the same headcount, locations and administration duties.

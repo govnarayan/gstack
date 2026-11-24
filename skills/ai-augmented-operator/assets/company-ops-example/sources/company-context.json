@@ -1,0 +1,21 @@
+{
+  "synthetic": true,
+  "declared_scope": "Synthetic acquired product business, next 90-day integration period",
+  "version": "board-draft-v2",
+  "as_of": "2026-01-15",
+  "authority": "Finance planning owner; capacity assumptions, not approved investment",
+  "controls": {
+    "budget": 120000,
+    "currency": "USD",
+    "fte_capacity": 3,
+    "capacity_period": "same 90-day period; FTE is concurrent allocation, not hires",
+    "planning_system": "V2MOM"
+  },
+  "facts": [
+    "Acquired product annual recurring revenue is 2400000 USD as of 2026-01-15.",
+    "Acquired product paying accounts are 120 accounts as of 2026-01-15.",
+    "Acquired product monthly activated trials are 80 trials as of 2026-01-15.",
+    "Acquired product trial-to-paid conversion is 20 percent as of 2026-01-15.",
+    "Budget and capacity values above are proposal ceilings for planning, not approvals."
+  ]
+}
